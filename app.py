@@ -1,10 +1,11 @@
 import flask as f
+import mysql.connector as my
 
 app = f.Flask(__name__)
 
 @app.route('/')
 def index():
-    title = 'Página inicial ( Huygnes )'
+    title = 'Página inicial'
     return f.render_template('index.html', title=title)
 
 @app.route('/login')
