@@ -1,5 +1,5 @@
 import flask as f
-import mysql.connector as my
+# import mysql.connector as my
 
 app = f.Flask(__name__)
 
