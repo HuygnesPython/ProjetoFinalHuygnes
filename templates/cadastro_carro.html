@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<div>
+    <form action="{{ url_for('cadastro_carro') }}" method="post">]
+        <label for="nome2">Seu Nome:</label>
+        <p>Obs.: é necessario ser o mesmo nome do cadastro anterior</p>
+        <input type="text" name="nome2" id="nome2" class="pb-1 rounded-1" required>
+        <br>
+        <label for="modelo">Modelo:</label>
+        <input type="text" name="modelo" id="modelo" class="pb-1 rounded-1" required>
+        <br>
+        <label for="marca">Marca:</label>
+        <input type="text" name="marca" id="marca" class="pb-1 rounded-1" required>
+        <br>
+        <label for="ano">Ano:</label>
+        <input type="text" name="ano" id="ano" class="pb-1 rounded-1" required>
+        <br>
+        <label for="placa">Placa:</label>
+        <input type="text" name="placa" id="placa" class="pb-1 rounded-1" required>
+    </form>
+</div>
+
+
+
+
+{% endblock %}
